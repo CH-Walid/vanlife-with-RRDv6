@@ -3,6 +3,7 @@ import { NavLink, Outlet } from "react-router-dom";
 const navLinks = [
   { path: "/host", text: "Dashboard" },
   { path: "/host/income", text: "Income" },
+  { path: "/host/vans", text: "Vans" },
   { path: "/host/reviews", text: "Reviews" },
 ];
 
