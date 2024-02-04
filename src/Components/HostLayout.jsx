@@ -1,5 +1,11 @@
 import { NavLink, Outlet } from "react-router-dom";
 
+const navLinks = [
+  { path: "/host", text: "Dashboard" },
+  { path: "/host/income", text: "Income" },
+  { path: "/host/reviews", text: "Reviews" },
+];
+
 const HostLayout = () => {
   const active = {
     fontWeigt: "bold",
@@ -10,9 +16,16 @@ const HostLayout = () => {
   return (
     <>
       <nav className="host-nav">
-        <NavLink to="/host" end style={({isActive})=> isActive ? active : null}>Dashboard</NavLink>
-        <NavLink to="/host/income" style={({isActive})=> isActive ? active : null}>Income</NavLink>
-        <NavLink to="/host/reviews" style={({isActive})=> isActive ? active : null}>Reviews</NavLink>
+        {navLinks.map(({ path, text }, index) => (
+          <NavLink
+            key={index}
+            to={path}
+            end
+            style={({ isActive }) => (isActive ? active : null)}
+          >
+            {text}
+          </NavLink>
+        ))}
       </nav>
       <Outlet />
     </>
