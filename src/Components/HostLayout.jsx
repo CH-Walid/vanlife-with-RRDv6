@@ -9,7 +9,7 @@ const navLinks = [
 
 const HostLayout = () => {
   const active = {
-    fontWeigt: "bold",
+    fontWeight: "bold",
     textDecoration: "underline",
     color: "#161616",
   };

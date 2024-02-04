@@ -8,7 +8,7 @@ const navLinks = [
 
 const Header = () => {
   const active = {
-    fontWeigt: "bold",
+    fontWeight: "bold",
     textDecoration: "underline",
     color: "#161616",
   };

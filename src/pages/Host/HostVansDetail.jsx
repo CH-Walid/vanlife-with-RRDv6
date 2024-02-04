@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const HostVansDetail = () => {
   const { id } = useParams();
@@ -13,6 +13,13 @@ const HostVansDetail = () => {
 
   return (
     <section>
+      <Link
+        to=".."
+        relative="path"
+        className="back-button"
+      >
+        &larr; <span>Back to all Vans</span>
+      </Link>
       {van && (
         <div className="host-van-detail-layout-container">
           <div className="host-van-detail">
