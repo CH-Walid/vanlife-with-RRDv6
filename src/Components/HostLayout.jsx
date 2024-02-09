@@ -21,7 +21,7 @@ const HostLayout = () => {
           <NavLink
             key={index}
             to={path}
-            end
+            end={path === "."}
             style={({ isActive }) => (isActive ? active : null)}
           >
             {text}
