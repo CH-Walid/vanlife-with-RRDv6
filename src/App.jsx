@@ -22,11 +22,13 @@ import HostVanInfo from "./pages/Host/HostVanInfo";
 import HostVanPhotos from "./pages/Host/HostVanPhotos";
 import vansLoader from "./pages/Vans/loaders/vansLoader";
 import Error from "./Components/Error";
+import Login from "./pages/Login";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
+        <Route path="login" element={<Login />} />
         <Route path="vans" element={<Vans />} loader={vansLoader} errorElement={<Error />} />
         <Route path="vans/:id" element={<VanDetail />} />
 
