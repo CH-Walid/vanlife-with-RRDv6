@@ -86,7 +86,8 @@ createServer({
     this.passthrough("https://firestore.googleapis.com/**");
     this.logging = false;
 
-    this.get("/vans", (schema/* , request */) => {
+    this.get("/vans", (schema) => {
+      /* return new Response(400, {}, {error: "Error fetching data"}) */
       return schema.vans.all();
     });
 
