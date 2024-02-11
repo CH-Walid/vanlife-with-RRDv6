@@ -1,15 +1,9 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 const HostVans = () => {
-  const [hostVans, setHostVans] = useState([]);
-  useEffect(() => {
-    fetch("/api/host/vans")
-      .then((res) => res.json())
-      .then((data) => setHostVans(data.vans));
-  }, []);
+  const hostVans = useLoaderData();
 
-  const hostVansEls = hostVans.map(hostVan => (
+  const hostVansEls = hostVans.map((hostVan) => (
     <Link
       to={`${hostVan.id}`}
       key={hostVan.id}
@@ -23,14 +17,13 @@ const HostVans = () => {
         </div>
       </div>
     </Link>
-  ))
+  ));
 
   return (
     <section>
       <h1 className="host-vans-title">Your listed Vans:</h1>
       <div className="host-bans-list">
-        {hostVans.length > 0 ? <section>{hostVansEls}</section>
-        : <h2>Loading...</h2>}
+        <section>{hostVansEls}</section>
       </div>
     </section>
   );
