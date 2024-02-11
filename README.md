@@ -2,10 +2,18 @@
 
 Welcome to the VANLIFE React web application! This project was inspired by the Scrimba course and serves as a playground for practicing the latest features of React Router Dom v6 library. VANLIFE allows users to explore different aspects of van life, including routes, destinations, and travel tips.
 
+![image](https://github.com/CH-Walid/vanlife-with-RRDv6/assets/75185278/ef87412f-4dde-4645-a4da-42c49f7d354b)
+
+![image](https://github.com/CH-Walid/vanlife-with-RRDv6/assets/75185278/ffa35e2d-68f8-4c18-8f4d-207442d79917)
+
+![image](https://github.com/CH-Walid/vanlife-with-RRDv6/assets/75185278/3ba32d50-9df9-4031-9ab7-d38fd21ab2eb)
+
+
 ## Features
 
 - **React Router Dom v6 Integration**: Utilizes the latest features of React Router Dom, including nested routes, search params, and loaders API.
-- 
+
+
 ## Installation
 
 To run the VANLIFE React web application locally, follow these steps:
