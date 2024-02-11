@@ -2,7 +2,7 @@ import { NavLink, Link } from "react-router-dom";
 import icon from '../assets/images/avatar-icon.png'
 
 const navLinks = [
-  { path: "/host", text: "Host" },
+  { path: "/host/vans"/* "/host" */, text: "Host" },
   { path: "/vans", text: "Vans" },
   { path: "/about", text: "About" },
 ];

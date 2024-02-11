@@ -1,10 +1,10 @@
 import { NavLink, Outlet } from "react-router-dom";
 
 const navLinks = [
-  { path: ".", text: "Dashboard" },
-  { path: "income", text: "Income" },
+/*   { path: ".", text: "Dashboard" },
+  { path: "income", text: "Income" }, */
   { path: "vans", text: "Vans" },
-  { path: "reviews", text: "Reviews" },
+/*   { path: "reviews", text: "Reviews" }, */
 ];
 
 const HostLayout = () => {
