@@ -8,6 +8,7 @@ body {
   padding: 0;
   background-color: #fff7ed;
   font-family: "Inter", sans-serif;
+  width: 100%;
 }
 
 a {
@@ -18,12 +19,14 @@ a {
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
+  width: 100%;
 }
 
 .site-wrapper {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 header {
@@ -68,6 +71,7 @@ nav {
 }
 
 main {
+  width: 100%;
   margin-bottom: 84px;
 }
 
@@ -81,6 +85,7 @@ footer {
   align-items: center;
   margin-top: auto;
   font-weight: 500;
+  width: 100%;
 }
 
 .link-button {
@@ -114,7 +119,7 @@ footer {
 /*** HOME PAGE ***/
 .home-container {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
-      url("./assets/images/home-hero.png") no-repeat center center;
+    url("./assets/images/home-hero.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -122,6 +127,7 @@ footer {
   min-height: 350px;
   color: white;
   padding: 45px 23px;
+  width: 100%;
 }
 
 .home-container h1 {
