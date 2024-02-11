@@ -20,7 +20,11 @@ import HostVansDetail from "./pages/Host/HostVansDetail";
 import HostVanPricing from "./pages/Host/HostVanPricing";
 import HostVanInfo from "./pages/Host/HostVanInfo";
 import HostVanPhotos from "./pages/Host/HostVanPhotos";
-import vansLoader, { hostVansDetailLoader, hostVansLoader, vanDetailLoader } from "./pages/Vans/loaders/vansLoader";
+import vansLoader, {
+  hostVansDetailLoader,
+  hostVansLoader,
+  vanDetailLoader,
+} from "./pages/Vans/loaders/vansLoader";
 import Error from "./Components/Error";
 import Login from "./pages/Login";
 
@@ -44,12 +48,14 @@ const router = createBrowserRouter(
       <Route path="vans/:id" loader={vanDetailLoader} element={<VanDetail />} />
 
       <Route path="host" element={<HostLayout />}>
-        <Route index element={<Dashboard />} />
         <Route
-          path="vans"
-          loader={hostVansLoader}
-          element={<HostVans />}
+          index
+          loader={async () => {
+            return null;
+          }}
+          element={<Dashboard />}
         />
+        <Route path="vans" loader={hostVansLoader} element={<HostVans />} />
         <Route
           path="vans/:id"
           loader={hostVansDetailLoader}
